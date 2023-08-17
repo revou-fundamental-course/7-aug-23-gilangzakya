@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00ffd5;
+    /* background-image: url(background1.jpg);
+    background-position: center; */
+}
+
+header{
+    background-color: white;
+    padding: 10px 30px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-radius: 10px;
+    box-shadow:  0 0 5px green;
+    background-color: #00ffd5;
+}
+header .span{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+header .span .u{
+    display: flex;
+    flex-direction: column;
+}
+header .span .u span{
+    width: 40px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px 0;
+}
+header .cekbox{
+    position: relative;
+    width: 20%;
+}
+header .cekbox input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+header .isi a{
+    margin: 10px;
+    background-color: snow;
+    border-radius: 0 3px 3px 0;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(21, 252, 0);
+    font-weight: bold;
+    border-radius: 5px;
+}
+header .isi a:hover{
+    background-color: rgb(43, 255, 43);
+    color: white;
+}
+header .isi{
+    width: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+    background-color: greenyellow;
+    border-radius: 10px;
+    z-index: 100;
+    right: 0;
+}
+header .type:checked + .isi{
+    max-height: 400px;
+}
+header .logo{
+    display: flex;
+    padding-left: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.triangle {
+    margin: 20px 0;
+}
+
+.triangle img {
+    max-width: 100%;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#hasil {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cpi{
+    color: #007BFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
