@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <h2>Kalkulator Segitiga</h2>
+    </div>
+    <div class="cekbox">
+        <label class="span" for="cek">
+            <div class="m"></div>
+            <div class="u">   
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </label>
+        <input type="checkbox" id="cek" class="type">
+        <div class="isi">
+            <a href="index.html">Luas</a>
+            <a href="keliling.html">Keliling</a>
+        </div>
+    </div>
+    </header>
+
+    <div class="container">
+        <h1>Kalkulator Luas Segitiga</h1>
+        <div class="triangle">
+            <img src="assets/luas.png" alt="Segitiga">
+        </div>
+        <label for="alas">Alas:</label>
+        <input type="number" id="alas" placeholder="Masukkan panjang alas">
+        <label for="tinggi">Tinggi:</label>
+        <input type="number" id="tinggi" placeholder="Masukkan tinggi segitiga">
+        <button id="hitung">Hitung Luas</button>
+        <button id="reset">Reset</button>
+        <p id="hasil">Luas segitiga: </p>
+    </div>
+    <div class="cpi">
+        <p>&copy;2023 Gilang Zakya Hardiansyah</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
